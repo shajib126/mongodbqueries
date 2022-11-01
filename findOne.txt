@@ -1,0 +1,4 @@
+//findOne: this query reeturn a single document from database
+ 
+db.collection.findOne({age:20})
+

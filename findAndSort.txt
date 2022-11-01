@@ -1,0 +1,10 @@
+//sort: this query will sorting the documents
+
+//ascending order
+
+db.collection.find().sort({title:1})
+
+
+//descending order
+
+db.collection.find().sort({title:-1})

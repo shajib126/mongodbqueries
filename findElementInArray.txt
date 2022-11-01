@@ -1,0 +1,10 @@
+//$elemMatch will find document from array
+//example: Suppose User X have two review ex-['rev1','rev 2'] you have to use this method to find User x reviews from reviews array
+
+db.collection.find({
+    reviews:{
+        $elemMatch:{
+            user:"User X"
+        }
+    }
+})

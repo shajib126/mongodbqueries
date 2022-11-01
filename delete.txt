@@ -1,0 +1,3 @@
+//remove: this will remove document from database
+
+db.collection.remove({_id:req.body.id})

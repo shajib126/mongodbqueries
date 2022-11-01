@@ -1,0 +1,3 @@
+
+//This query insert single data to database
+db.collection.insertOne({name:'Max'})

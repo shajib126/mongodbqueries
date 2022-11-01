@@ -1,0 +1,26 @@
+db.createCollection('ostads',{
+    validator:{$jsonSchem:{
+        bsonType:'object',
+        required:['phone'],
+        properties:{
+            phone:{
+                bsonType:'String',
+                description:"must be a string"
+
+            },
+            email:{
+                bsonType:'String',
+                pattern:"@example.com$",
+                description:"must be a string"
+
+            },
+
+            status:{
+                enum:["Unknown","Incomplete"],
+                description:"can only be one of the enum values"
+
+            }
+            
+        }
+    }}
+})

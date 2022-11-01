@@ -1,0 +1,3 @@
+//limit: this query return limited document
+
+db.collection.find().limit(2)

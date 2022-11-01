@@ -1,0 +1,6 @@
+db.collection.update({_id:req.body.id},
+    {$rename:{
+        name:'Rabbil hasan rupom'  //name renamed from Ostad to rabbil hasan rupom
+    }}
+    
+    )

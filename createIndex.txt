@@ -1,0 +1,6 @@
+db.collection.createIndex({"name":1}) //single field
+db.collection.createIndex({"name":1,"date":1}) //compound
+
+db.collection.createIndex({"name":"something","address":"something"}) //text index
+
+db.collection.createIndex({"$**":"text"}) //wildcard

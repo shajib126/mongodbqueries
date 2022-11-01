@@ -1,0 +1,10 @@
+//$inc will increase by setted number
+
+//ex: price will increase by 200
+db.collection.update({_id:req.body.id},
+    {
+        $inc:{
+            price:200
+        }
+    }    
+)

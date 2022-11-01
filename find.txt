@@ -1,0 +1,6 @@
+//this query return an array of documents
+db.collection.find({age:18})
+
+//get all rows formated
+
+db.collection.find().pretty()

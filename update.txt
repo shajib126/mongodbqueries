@@ -1,0 +1,22 @@
+//update : to update data 
+
+db.collection.update({_id:req.body._id},
+    {
+        name:'Ostad',
+        course:'MERN 2.0'
+    },
+    {
+        upsert:true
+    }
+)
+
+//update specific field
+
+db.collection.update({_id:req.body._id},
+    {
+        $set:{
+            name:'Ostad',
+            course:"MERN 2.0"
+        }
+    }    
+)

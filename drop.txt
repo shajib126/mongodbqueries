@@ -1,0 +1,4 @@
+//remove the collection and its index
+db.collection.drop()
+
+db.dropDatabase() //double check that you are not on the Cluster

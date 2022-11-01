@@ -1,0 +1,4 @@
+//this query can insert single and many data to database
+
+
+db.collection.insert([{name:'Example1'},{name:"Example 2"}])

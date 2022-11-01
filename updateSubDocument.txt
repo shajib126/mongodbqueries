@@ -1,0 +1,19 @@
+db.collection.update({_id:req.body.id},
+    {
+        $set:{
+            reviews:[
+                {
+                    body:'review one',
+                    user:'User X',
+                    date:Date()
+                },
+                {
+                    body:'review two',
+                    user:'User Y',
+                    date:Date()
+                }
+            ]
+        }
+    }
+    
+)

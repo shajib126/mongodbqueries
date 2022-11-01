@@ -1,0 +1,5 @@
+//forEach: We know find method return an array of document. if we have to loop over this array of document we can use forEach method
+
+db.collection.find().forEach(function(doc){
+    console.log(`hello ${doc.name}`)
+})
